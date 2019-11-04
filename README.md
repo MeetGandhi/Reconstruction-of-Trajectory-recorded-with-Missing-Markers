@@ -18,3 +18,11 @@ The pre-processed human motion capture data as well as the base code were extrac
 
 Once the data is available make sure that you put it in data folder ad change the path in code/utils/flags.py appropriately for every implementation.
 
+# Implementations
+
+# Conclusions
+
+# Customization
+
+You can experiment with the hyperparameters of the network by changing the same in the file code/utils/flags.py present in each of the network's folder.
+
