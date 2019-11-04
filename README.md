@@ -30,7 +30,7 @@ See this [Jupyter Notebook](https://github.com/MeetGandhi/Reconstruction-of-Traj
 
 ### Temporal Convolutional Neural Network + Wasserstein GAN with Gradient Penalty
 
-See this [Jupyter Notebook]() or [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]()
+See this [Jupyter Notebook]() or [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1yUxODlBlonchPvQ44J9kfReDvwlJx8_s)
 
 ### Temporal Convolutional Neural Network + LSTM
 
