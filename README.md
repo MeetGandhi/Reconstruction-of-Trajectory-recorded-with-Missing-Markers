@@ -16,5 +16,5 @@ The project deals with implementing various Neural Network approaches to perform
 
 The pre-processed human motion capture data as well as the base code were extracted from [A Neural Network Approach to Missing Marker Reconstruction](https://github.com/Svito-zar/NN-for-Missing-Marker-Reconstruction). In order to use your own Motion Capture data, follow the steps in the Data Preparation section of *A Neural Network Approach to Missing Marker Reconstruction* repository.
 
-Oncce the data is available make sure that you put it in data folder ad change the path in utils/flags.py appropriately.
+Once the data is available make sure that you put it in data folder ad change the path in code/utils/flags.py appropriately for every implementation.
 
