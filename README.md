@@ -9,7 +9,8 @@ The project deals with implementing various Neural Network approaches to perform
 * keras-tcn
 * numpy
 * matplotlib
-
+* torchdiffeq
+* torch >= 1.0
 
 # Human Motion Capture Data
 
