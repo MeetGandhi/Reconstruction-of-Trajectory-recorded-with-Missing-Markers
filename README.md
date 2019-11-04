@@ -40,6 +40,10 @@ See this [Jupyter Notebook](https://github.com/MeetGandhi/Reconstruction-of-Traj
 
 See this [Jupyter Notebook](https://github.com/MeetGandhi/Reconstruction-of-Trajectory-with-Missing-Markers/blob/master/Latent%20ODEs%20for%20Irregularly-Sampled%20Time%20Series/Latent_ODEs_for_Irregularly_Sampled_Time_Series.ipynb) or [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1X42HCkgZh-CsHqtEUVj_EE-CmAdNXCGP)
 
+### [Long Short Term Network](https://github.com/Svito-zar/NN-for-Missing-Marker-Reconstruction)
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Sx0xBeTOc-9zu8LKadMPy4zmLi7H-Jhz)
+
 # Conclusions
 
 # Customization
