@@ -18,3 +18,40 @@ The pre-processed human motion capture data as well as the base code were extrac
 
 Once the data is available make sure that you put it in data folder ad change the path in code/utils/flags.py appropriately for every implementation.
 
+# Implementations
+
+### Temporal Convolutional Neural Network
+
+See this [Jupyter Notebook](https://github.com/MeetGandhi/Reconstruction-of-Trajectory-with-Missing-Markers/blob/master/Temporal%20Convolutional%20Neural%20Network/TCN.ipynb) or [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1TvyKyYiPAc3wMLbw-e5CIYFcaj8KyWCg)
+
+### Temporal Convolutional Neural Network + Wasserstein GAN
+
+See this [Jupyter Notebook](https://github.com/MeetGandhi/Reconstruction-of-Trajectory-with-Missing-Markers/blob/master/Temporal%20CNN%20%2B%20Wasserstein%20GAN/TCN_WGAN.ipynb) or [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1jIAf_1XJLDRil7z6_NZomclrGp_4yGXw)
+
+### Temporal Convolutional Neural Network + Wasserstein GAN with Gradient Penalty
+
+See this [Jupyter Notebook]() or [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1yUxODlBlonchPvQ44J9kfReDvwlJx8_s)
+
+### Temporal Convolutional Neural Network + LSTM
+
+See this [Jupyter Notebook](https://github.com/MeetGandhi/Reconstruction-of-Trajectory-with-Missing-Markers/blob/master/Temporal%20CNN%20%2B%20LSTM/TCN_LSTM.ipynb) or [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1_CUVh4rRRxq7d7TJKkG7fBFQ7jWwhPXs)
+
+### [Latent ODEs for Irregularly-Sampled Time Series](https://github.com/YuliaRubanova/latent_ode)
+
+See this [Jupyter Notebook](https://github.com/MeetGandhi/Reconstruction-of-Trajectory-with-Missing-Markers/blob/master/Latent%20ODEs%20for%20Irregularly-Sampled%20Time%20Series/Latent_ODEs_for_Irregularly_Sampled_Time_Series.ipynb) or [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1X42HCkgZh-CsHqtEUVj_EE-CmAdNXCGP)
+
+### [Long Short Term Network](https://github.com/Svito-zar/NN-for-Missing-Marker-Reconstruction)
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Sx0xBeTOc-9zu8LKadMPy4zmLi7H-Jhz)
+
+### Wasserstein GAN
+
+See this [Jupyter Notebook]() or [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Q5iDNJBbk0wWcLbWPPplIIU6b6cqA1dV)
+
+Note that WGAN implementation was ran for 50 epochs instead of the default 100 epochs(for the rest of the networks) as WGAN was not showing any further improvement in test RMSE.
+
+# Conclusions
+
+# Customization
+
+You can experiment with the hyperparameters of the network by changing the same in the file code/utils/flags.py present in each of the network's folder.
