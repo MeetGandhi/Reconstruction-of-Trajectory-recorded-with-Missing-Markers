@@ -4,5 +4,5 @@ The project deals with implementing various Neural Network approaches to perform
 
 # Human Motion Capture Data
 
-The pre-processed human motion capture data was extracted from [A Neural Network Approach to Missing Marker Reconstruction](https://github.com/Svito-zar/NN-for-Missing-Marker-Reconstruction)
+The pre-processed human motion capture data as well as the base code were extracted from [A Neural Network Approach to Missing Marker Reconstruction](https://github.com/Svito-zar/NN-for-Missing-Marker-Reconstruction)
 
