@@ -1,6 +1,15 @@
-# Reconstruction-of-Trajectory-with-Missing-Markers
+# Reconstruction of Trajectory with Missing Markers
 
 The project deals with implementing various Neural Network approaches to perform the reconstruction of missing markers in the human motion capture data and as a result finding the one which gives the most accurate recreation.
+
+# Prerequisites
+
+* Python 3
+* Tensorflow >= 1.0
+* keras-tcn
+* numpy
+* matplotlib
+
 
 # Human Motion Capture Data
 
