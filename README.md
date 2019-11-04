@@ -28,6 +28,14 @@ See this [Jupyter Notebook](https://github.com/MeetGandhi/Reconstruction-of-Traj
 
 See this [Jupyter Notebook](https://github.com/MeetGandhi/Reconstruction-of-Trajectory-with-Missing-Markers/blob/master/Temporal%20CNN%20%2B%20Wasserstein%20GAN/TCN_WGAN.ipynb) or [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1jIAf_1XJLDRil7z6_NZomclrGp_4yGXw)
 
+### Temporal Convolutional Neural Network + Wasserstein GAN with Gradient Penalty
+
+See this [Jupyter Notebook]() or [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]()
+
+### Temporal Convolutional Neural Network + LSTM
+
+See this [Jupyter Notebook](https://github.com/MeetGandhi/Reconstruction-of-Trajectory-with-Missing-Markers/blob/master/Temporal%20CNN%20%2B%20LSTM/TCN_LSTM.ipynb) or [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1_CUVh4rRRxq7d7TJKkG7fBFQ7jWwhPXs)
+
 # Conclusions
 
 # Customization
