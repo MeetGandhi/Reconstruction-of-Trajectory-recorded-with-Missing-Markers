@@ -44,9 +44,12 @@ See this [Jupyter Notebook](https://github.com/MeetGandhi/Reconstruction-of-Traj
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Sx0xBeTOc-9zu8LKadMPy4zmLi7H-Jhz)
 
+### Wasserstein GAN
+
+See this [Jupyter Notebook]() or [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]()
+
 # Conclusions
 
 # Customization
 
 You can experiment with the hyperparameters of the network by changing the same in the file code/utils/flags.py present in each of the network's folder.
-
