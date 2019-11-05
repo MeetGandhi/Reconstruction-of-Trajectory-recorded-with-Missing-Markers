@@ -72,6 +72,30 @@ Similar to LSTM's cases, the training session here started with a validation RMS
 
 WGAN+LSTM's training started with a very high validation RMSE error (~117) as expected, nevertheless in the next five training epochs WGAN+LSTM trained very quickly, thus bring down validation RMSE error to ~19. As WGAN+LSTM was not showing much improvements after epoch 5 all the way up to epoch 50, the training session was stopped at epoch 50. This suggests that the current WGAN+LSTM configuration had trained completely and could not go beyond ~15 test RMSE error.
 
+### Latent ODEs for Irregularly-Sampled Time Series
+
+* Latent ODE with RNN encoder: 
+     - Initial validation MSE error: 0.6534
+     - Final validation MSE error: 0.0582
+ 
+ * ODE-RNN: 
+     - Initial validation MSE error: 0.4381
+     - Final validation MSE error: 0.0567
+     
+ * RNN-VAE: 
+     - Initial validation MSE error: 0.56
+     - Final validation MSE error: 0.4709
+     
+ * Latent ODE with ODE-RNN encoder and poisson likelihood: 
+     - Initial validation MSE error: 0.4918
+     - Final validation MSE error: 0.0626
+     
+ * Latent ODE with ODE-RNN encoder:
+     - Initial validation MSE error: 0.4779
+     - Final validation MSE error: 0.0616
+     
+Note that the above models have been implemented from [Latent ODEs for Irregularly-Sampled Time Series](https://arxiv.org/abs/1907.03907)
+
 # Customization
 
 You can experiment with the hyperparameters of the network by changing the same in the file code/utils/flags.py present in each of the network's folder.
