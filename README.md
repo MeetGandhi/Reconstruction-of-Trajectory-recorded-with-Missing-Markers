@@ -62,7 +62,7 @@ WGAN's training started with a very high validation RMSE error (~117) as expecte
 
 ### Temporal Convolutional Neural Network + Wasserstein GAN
 
-To leverage the quickly trained WGAN features with TCN which had a hard time training, an ensemble network was trained which had a starting validation RMSE error of ~ 117 and eventually a test RMSE error was ~24 after the training ended. As a result CN seems to have increased WGAN's test RMSE error.
+To leverage the quickly trained WGAN features with TCN which had a hard time training, an ensemble network was trained showing a starting validation RMSE error of ~ 117 and eventually a test RMSE error of ~24 after the training ended. As a result TCN seems to have increased WGAN's test RMSE error.
 
 # Customization
 
