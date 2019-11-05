@@ -44,11 +44,11 @@ See this [Jupyter Notebook](https://github.com/MeetGandhi/Reconstruction-of-Traj
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Sx0xBeTOc-9zu8LKadMPy4zmLi7H-Jhz)
 
-### Wasserstein GAN
+### Wasserstein GAN + LSTM
 
-See this [Jupyter Notebook](https://github.com/MeetGandhi/Reconstruction-of-Trajectory-with-Missing-Markers/blob/master/Wasserstein%20GAN/WGAN.ipynb) or [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Q5iDNJBbk0wWcLbWPPplIIU6b6cqA1dV)
+See this [Jupyter Notebook](https://github.com/MeetGandhi/Reconstruction-of-Trajectory-with-Missing-Markers/blob/master/Wasserstein%20GAN/WGAN.ipynb) or [![Open In Colab](https://colab.research.google.com/drive/1Q5iDNJBbk0wWcLbWPPplIIU6b6cqA1dV)
 
-Note that WGAN implementation was ran for 50 epochs instead of the default 100 epochs(for the rest of the networks) as WGAN was not showing any further improvement in test RMSE.
+Note that WGAN + LSTM implementation was ran for 50 epochs instead of the default 100 epochs(for the rest of the networks) as WGAN was not showing any further improvement in test RMSE.
 
 # Conclusions
 
