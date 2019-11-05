@@ -104,6 +104,8 @@ For more information regarding the above models refer [Latent ODEs for Irregular
 
 **Ultimately, we did find a very accurate network: Latent ODEs, as evident from the above validation MSE errors of Latent ODEs in comparison to RNN-VAE or LSTM. Hence Latent ODEs possess a strong potential towards automatic reconstruction of motion capture trajectories recorded with missing markers in softwares like Vicon Nexus.**
 
+Note that Latent ODE models are Ordinary Differential Equations-based models differentiating them from their Recurrent Neural Network-based counterparts.
+
 # Customization
 
 You can experiment with the hyperparameters of the network by changing the same in the file code/utils/flags.py present in each of the network's folder.
