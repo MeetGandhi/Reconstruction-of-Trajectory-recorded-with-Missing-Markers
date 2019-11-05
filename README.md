@@ -98,6 +98,14 @@ For more information regarding the above models refer [Latent ODEs for Irregular
 
 [Localization Data for Person Activity Data Set](https://archive.ics.uci.edu/ml/datasets/Localization+Data+for+Person+Activity/) is used in the above case which is different from the previous implementations.
 
+**Conclusively, through this project we first experimented with how efficient Generative Adversarial Networks and Temporal Convolutional Neural Networks can be pertaining to sequence-sequence generation task.**
+
+**Thereafter having found the state of the art Long Short Term Memory Networks, we tried to augment the same however it failed with WGAN and TCN.**
+
+**Ultimately, we did find a very accurate network: Latent ODEs, as evident from the above validation MSE errors of Latent ODEs in comparison to RNN-VAE or LSTM. Hence Latent ODEs possess a strong potential towards automatic reconstruction of motion capture trajectories recorded with missing markers in softwares like Vicon Nexus.**
+
+To know more about Latent ODEs and related models, head to [Latent ODEs for Irregularly-Sampled Time Series](https://arxiv.org/abs/1907.03907).
+
 # Customization
 
 You can experiment with the hyperparameters of the network by changing the same in the file code/utils/flags.py present in each of the network's folder.
