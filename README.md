@@ -64,14 +64,13 @@ To leverage the WGAN features with TCN which had a hard time training, an ensemb
 
 LSTM was trained with the same hyperparameters as mentioned in [A Neural Network Approach to Missing Marker Reconstruction](https://github.com/Svito-zar/NN-for-Missing-Marker-Reconstruction). The training session for LSTM started with exceptionally low validation RMSE error of ~14 (test RMSE error for other networks) and ended with test RMSE error of ~2. As expected LSTM is unmatched in time-series sequence to sequence generation task. However, in order to lower down the test RMSE error further, various other ensemble neural networks were devised with a combination of LSTM and another neural network.
 
-### Long Short Term Network + Temporal Convolutional Neural Network
+### Temporal Convolutional Neural Network + Long Short Term Network
 
 Similar to LSTM's cases, the training session here started with a validation RMSE error of ~14, however due to the non-training influence of TCN, the training ended with approximately equal test RMSE error of ~13.
 
-### Long Short Term Network + Wasserstein GAN
+### Wasserstein GAN + Long Short Term Network
 
 WGAN+LSTM's training started with a very high validation RMSE error (~117) as expected, nevertheless in the next five training epochs WGAN+LSTM trained very quickly, thus bring down validation RMSE error to ~19. As WGAN+LSTM was not showing much improvements after epoch 5 all the way up to epoch 50, the training session was stopped at epoch 50. This suggests that the current WGAN+LSTM configuration had trained completely and could not go beyond ~15 test RMSE error.
-
 
 # Customization
 
