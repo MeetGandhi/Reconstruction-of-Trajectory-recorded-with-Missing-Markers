@@ -94,7 +94,7 @@ WGAN+LSTM's training started with a very high validation RMSE error (~117) as ex
      - Initial validation MSE error: 0.4779
      - Final validation MSE error: 0.0616
      
-Note that the above models have been implemented from [Latent ODEs for Irregularly-Sampled Time Series](https://arxiv.org/abs/1907.03907)
+For more information regarding the above models refer [Latent ODEs for Irregularly-Sampled Time Series](https://arxiv.org/abs/1907.03907). The dataset used here is [Human Activity](https://archive.ics.uci.edu/ml/datasets/Localization+Data+for+Person+Activity/) which is different from the previous implementations.
 
 # Customization
 
