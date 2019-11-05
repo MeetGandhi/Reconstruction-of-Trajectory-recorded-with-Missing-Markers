@@ -30,7 +30,7 @@ See this [Jupyter Notebook](https://github.com/MeetGandhi/Reconstruction-of-Traj
 
 ### Temporal Convolutional Neural Network + Wasserstein GAN with Gradient Penalty
 
-See this [Jupyter Notebook]() or [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1yUxODlBlonchPvQ44J9kfReDvwlJx8_s)
+See this [Jupyter Notebook](https://github.com/MeetGandhi/Reconstruction-of-Trajectory-with-Missing-Markers/blob/master/Temporal%20CNN%20%2B%20Wasserstein%20GAN%20with%20Gradient%20Penalty/TCN_WGAN_GP.ipynb) or [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1yUxODlBlonchPvQ44J9kfReDvwlJx8_s)
 
 ### Temporal Convolutional Neural Network + LSTM
 
@@ -46,11 +46,31 @@ See this [Jupyter Notebook](https://github.com/MeetGandhi/Reconstruction-of-Traj
 
 ### Wasserstein GAN
 
-See this [Jupyter Notebook]() or [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Q5iDNJBbk0wWcLbWPPplIIU6b6cqA1dV)
+See this [Jupyter Notebook](https://github.com/MeetGandhi/Reconstruction-of-Trajectory-with-Missing-Markers/blob/master/Wasserstein%20GAN/WGAN.ipynb) or [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Q5iDNJBbk0wWcLbWPPplIIU6b6cqA1dV)
 
 Note that WGAN implementation was ran for 50 epochs instead of the default 100 epochs(for the rest of the networks) as WGAN was not showing any further improvement in test RMSE.
 
 # Conclusions
+
+### Temporal Convolutional Neural Network
+
+The training session for TCN started with a very low validation RMSE error (~40) compared to the other networks, however in the subsequent epochs the RMSE error did not improve but stayed the same. At the end of the training session, the test RMSE error was ~32 which was just a slight decrease from the starting validation error. According to our observations, the limitations in the receptive field of the Temporal Convolutional Neural Network is the reason for the above training performance.
+
+### Wasserstein GAN
+
+WGAN's training started with a very high validation RMSE error (~117) as expected, nevertheless in the next five training epochs WGAN trained very quickly, thus bring down validation RMSE error to ~19. As WGAN was not showing much improvements after epoch 5 all the way up to epoch 50, the training session was stopped. This suggests that the current WGAN configuration had trained completely and could not go beyond ~15 test RMSE error.
+
+### Temporal Convolutional Neural Network + Wasserstein GAN
+
+To leverage the quickly trained WGAN features with TCN which had a hard time training, an ensemble network was trained showing a starting validation RMSE error of ~ 117 and eventually a test RMSE error of ~24 after the training ended. As a result TCN seems to have increased WGAN's test RMSE error.
+
+### Long Short Term Network
+
+LSTM was trained with the same hyperparameters as mentioned in [A Neural Network Approach to Missing Marker Reconstruction](https://github.com/Svito-zar/NN-for-Missing-Marker-Reconstruction). The training session for LSTM started with exceptionally low validation RMSE error of ~14 (test RMSE error for other networks) and ended with test RMSE error of ~2. As expected LSTM is unmatched in time-series sequence to sequence generation task. However, in order to lower down the test RMSE error further, various other ensemble neural networks were devised with a combination of LSTM and another neural network.
+
+### Long Short Term Network + Temporal Convolutional Neural Network
+
+Similar to LSTM's cases, the training session here started with a validation RMSE error of ~14, however due to the non-training influence of TCN, the training ended with approximately equal test RMSE error of ~13.
 
 # Customization
 
