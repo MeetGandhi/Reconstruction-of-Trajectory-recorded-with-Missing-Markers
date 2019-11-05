@@ -64,6 +64,11 @@ WGAN's training started with a very high validation RMSE error (~117) as expecte
 
 To leverage the quickly trained WGAN features with TCN which had a hard time training, an ensemble network was trained showing a starting validation RMSE error of ~ 117 and eventually a test RMSE error of ~24 after the training ended. As a result TCN seems to have increased WGAN's test RMSE error.
 
+### Long Short Term Network
+
+LSTM was trained with the same hyperparameters as mentioned in [A Neural Network Approach to Missing Marker Reconstruction](https://github.com/Svito-zar/NN-for-Missing-Marker-Reconstruction). The training session for LSTM started with exceptionally low validation RMSE error of ~14 (test RMSE error for other networks) and ended with test RMSE error of ~2. As expected LSTM is unmatched in time-series sequence to sequence generation task. However, in order to lower down the test RMSE error further, various other ensemble neural networks were devised with a combination of LSTM and another neural network.
+
+
 # Customization
 
 You can experiment with the hyperparameters of the network by changing the same in the file code/utils/flags.py present in each of the network's folder.
