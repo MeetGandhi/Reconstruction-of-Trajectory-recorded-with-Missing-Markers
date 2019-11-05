@@ -52,6 +52,10 @@ Note that WGAN implementation was ran for 50 epochs instead of the default 100 e
 
 # Conclusions
 
+### Temporal Convolutional Neural Network
+
+The training session for TCN started with a very low validation RMSE error (~40) compared to the other networks, however in the subsequent epochs the RMSE error did not improve but stayed the same. At the end of the training session, the test RMSE error was ~32 which was just a slight decrease from the starting validation error. According to our observations, the limitations in the receptive field of the Temporal Convolutional Neural Network is the reason for the above training performance.
+
 # Customization
 
 You can experiment with the hyperparameters of the network by changing the same in the file code/utils/flags.py present in each of the network's folder.
