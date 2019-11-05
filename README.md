@@ -56,6 +56,10 @@ Note that WGAN implementation was ran for 50 epochs instead of the default 100 e
 
 The training session for TCN started with a very low validation RMSE error (~40) compared to the other networks, however in the subsequent epochs the RMSE error did not improve but stayed the same. At the end of the training session, the test RMSE error was ~32 which was just a slight decrease from the starting validation error. According to our observations, the limitations in the receptive field of the Temporal Convolutional Neural Network is the reason for the above training performance.
 
+### Wasserstein GAN
+
+WGAN's training started with a very high validation RMSE error (~117) as expected, nevertheless in the next five training epochs WGAN trained very quickly, thus bring down validation RMSE error to ~19. As WGAN was not showing much improvements after epoch 5 all the way up to epoch 50, the training session was stopped. This suggests that the current WGAN configuration had trained completely and could not go beyond ~15 test RMSE error.
+
 # Customization
 
 You can experiment with the hyperparameters of the network by changing the same in the file code/utils/flags.py present in each of the network's folder.
