@@ -109,3 +109,10 @@ Note that Latent ODE models are Ordinary Differential Equations-based models dif
 # Customization
 
 You can experiment with the hyperparameters of the network by changing the same in the file code/utils/flags.py present in each of the network's folder.
+
+# Acknowledgements
+
+* Kucherenko, Taras, Jonas Beskow, and Hedvig Kjellström. "A neural network approach to missing marker reconstruction in human motion capture." arXiv preprint arXiv:1803.02665 (2018).
+
+* Rubanova, Yulia, Ricky TQ Chen, and David Duvenaud. "Latent odes for irregularly-sampled time series." arXiv preprint arXiv:1907.03907 (2019).
+
